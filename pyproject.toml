@@ -3,12 +3,13 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "db-mcp"
-version = "0.1.0"
-description = "MCP server for querying MySQL, SQLite, and Power BI (PBIX)"
+name = "infra-mcp"
+version = "0.2.0"
+description = "MCP server for querying databases, LSF clusters, and machine info"
 requires-python = ">=3.11"
 dependencies = [
     "fastmcp",
+    "psutil",
     "pymysql",
 ]
 
